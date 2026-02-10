@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- GLOBAL SPIDER CURSOR -->
+<img src="spider-cursor.png" id="spiderCursor" alt="spider">
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<!-- ===== NAV ===== -->
+<header class="main-header">
+     <div class="logo-wrap">
+        <img src="profile.jpg" alt="RubanSamuel" class="logo-img">
+        <h2 class="logo-text">RubanSamuel</h2>
+    </div>
+
+    <nav id="navMenu" class="icon-nav">
+
+    <a href="#home" title="Profile"><i class="fa-solid fa-house"></i></a>
+    <a href="#Snapshort" title="Snapshort"><i class="fa-solid fa-user"></i></a>
+    <a href="#toolkit" title="Toolkit"><i class="fa-solid fa-brain"></i></a>
+    <a href="#workbench" title="Workbench"><i class="fa-solid fa-briefcase"></i></a>
+    <a href="#contact" title="Let's Connect"><i class="fa-solid fa-handshake"></i></a>
+</nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero reveal">
+
+    <canvas id="webCanvas"></canvas>
+
+     <div class="home-wrapper">
+
+        <!-- LEFT : HERO TEXT -->
+        <div class="home-left">
+            <h1>Hi, I'm <span>Samuel R</span></h1>
+            <h3>Data Scientist | BI Analyst</h3>
+            <p>
+                I enjoy turning raw data into meaningful insights using interactive dashboards and predictive models. My aim is to make trends easy to understand and help people make smarter, data-driven decisions.
+            </p>
+        </div>
+
+        <!-- RIGHT : HERO IMAGE (MAIN VISUAL) -->
+        <div class="home-right">
+            <img src="work-bg.png" alt="Work visuals">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== Snapshort ===== -->
+<section id="Snapshort" class="card reveal">
+    <h2>Snapshort</h2>
+    <p>
+        I'm someone who enjoys working with data to solve problems and build practical, meaningful solutions. I like exploring information, identifying meaningful patterns, and presenting insights in a clear and simple way that helps people understand and make better decisions. I place a strong focus on clarity, making sure my work is reliable, accurate, and easy to interpret.
+        I enjoy blending logic with creativity, as I believe combining both helps in building solutions that not only work well but also connect naturally with the people who use them. With a practical mindset and thoughtful problem-solving approach, I aim to deliver insights that are effective, useful, and grounded in real-world needs.
+    </p>
+</section>
+
+<!-- ===== Toolkit ===== -->
+<section id="toolkit" class="card reveal">
+    <h2>Toolkit</h2>
+
+    <div class="eco-grid">
+        <div class="eco-item"><i class="fa-brands fa-python"></i><p>Python</p></div>
+        <div class="eco-item"><i class="fa-solid fa-book-open"></i><p>Jupyter</p></div>
+        <div class="eco-item"><i class="fa-solid fa-database"></i><p>SQL</p></div>
+        <div class="eco-item"><i class="fa-solid fa-file-excel"></i><p>Excel</p></div>
+        <div class="eco-item"><i class="fa-solid fa-chart-column"></i><p>Power BI</p></div>
+        <div class="eco-item"><i class="fa-solid fa-chart-line"></i><p>Tableau</p></div>
+        <div class="eco-item"><i class="fa-solid fa-robot"></i><p>Machine Learning</p></div>
+        <div class="eco-item"><i class="fa-solid fa-calculator"></i><p>Statistics & Probability</p></div>
+        <div class="eco-item"><i class="fa-solid fa-layer-group"></i><p>Libraries</p></div>
+        <div class="eco-item"><i class="fa-solid fa-magnifying-glass-chart"></i><p>Analyzing Data</p></div>
+    </div>
+</section>
+
+<!-- ===== Workbench ===== -->
+<section id="workbench" class="reveal">
+    <h2 class="title">My Workbench</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card tilt" onclick="openModal(1)">
+            <div class="project-img"><img src="project1.jpg"></div>
+            <div class="project-content">
+                <h3>Visa Issuance Dashboard</h3>
+                <p>Power BI dashboard analyzing Visas.</p>
+                <div class="tags"><span>Excel</span><span>KPIs</span></div>
+            </div>
+        </div>
+
+        <div class="project-card tilt" onclick="openModal(2)">
+            <div class="project-img"><img src="project2.jpg"></div>
+            <div class="project-content">
+                <h3>Covid-19 Dashboard</h3>
+                <p>Power BI dashboard analyzing KPIs.</p>
+                <div class="tags"><span>KPIs</span><span>Excel</span></div>
+            </div>
+        </div>
+
+        <div class="project-card tilt" onclick="openModal(3)">
+            <div class="project-img"><img src="project3.jpg"></div>
+            <div class="project-content">
+                <h3>Real Estate Price Prediction</h3>
+                <p>Web app for price prediction.</p>
+                <div class="tags"><span>Django</span><span>Python</span></div>
+            </div>
+        </div>
+
+        <div class="project-card tilt" onclick="openModal(4)">
+            <div class="project-img"><img src="project4.jpg"></div>
+            <div class="project-content">
+                <h3>Disaster & Resource Assessment</h3>
+                <p>Web portal during disasters.</p>
+                <div class="tags"><span>Spring Boot</span><span>Email</span></div>
+            </div>
+        </div>
+
+        <div class="project-card tilt" onclick="openModal(5)">
+            <div class="project-img"><img src="project5.jpg"></div>
+            <div class="project-content">
+                <h3>Financial Performance Dashboard</h3>
+                <p>Budget vs Actual analysis.</p>
+                <div class="tags"><span>Pivot</span><span>KPIs</span></div>
+            </div>
+        </div>
+
+        <div class="project-card tilt" onclick="openModal(6)">
+            <div class="project-img"><img src="project6.jpg"></div>
+            <div class="project-content">
+                <h3>Customer Sales Analysis</h3>
+                <p>Structured data into insights.</p>
+                <div class="tags"><span>MySQL</span><span>MySQL Workbench</span></div>
+            </div>
+        </div>
+
+        <div class="project-card tilt" onclick="openModal(7)">
+            <div class="project-img"><img src="project7.jpg"></div>
+            <div class="project-content">
+                <h3>Supply Chain Dashboard</h3>
+                <p>Delivery performance analysis.</p>
+                <div class="tags"><span>Tableau</span><span>Excel</span></div>
+            </div>
+        </div>
+
+        <div class="project-card tilt" onclick="openModal(8)">
+            <div class="project-img"><img src="project8.jpg"></div>
+            <div class="project-content">
+                <h3>Credit Risk & Loan Default Analysis</h3>
+                <p>Predicting loan default risk.</p>
+                <div class="tags"><span>Python</span><span>MySQL</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== MODAL ===== -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <p><strong>Tools:</strong> <span id="modalTools"></span></p>
+    </div>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="card reveal">
+    <h2>Connect With Me</h2>
+     <p class="email-text"><i class="fa-solid fa-envelope"></i>contactsam04@gmail.com</p>
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/rubansamuel/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.kaggle.com/rubansamuel04"><i class="fa-brands fa-kaggle"></i></a>
+        <a href="https://github.com/RubanSamuel04"><i class="fa-brands fa-github"></i></a>
+    </div>
+</section>
+
+<footer>
+    <p>©2026 All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
